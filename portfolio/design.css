@@ -1,0 +1,170 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+.profile-pic {
+    width: 90px; 
+    height: 100px; 
+    border-radius: 20%; 
+    margin-left: 10px; 
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background:lightseagreen;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 10px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: lightseagreen;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    margin: 0;
+}
+header nav ul li a:hover {
+    color: #ffd700;
+}
+.profile-pic:hover {
+    opacity: 0.8;
+}
+a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+header {
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: darkcyan;
+}
+
+/* Animation on profile picture */
+.profile-pic {
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframe animation on portfolio items */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-items {
+    animation: slideIn 0.5s ease forwards;
+}
+
+/* Box shadow on sections */
+section {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient background on header */
+header {
+    background: linear-gradient(to right, lightseagreen, darkcyan);
+}
+
+/* Transformation on portfolio items */
+.portfolio-items {
+    transform: rotate(5deg);
+}
+
+/* Parallax effect on header background */
+header {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Text shadow on headings */
+h1, h2, h3, h4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#contact p {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+#contact p:hover {
+    border-color: #ffd700;
+}
+.profile-pic {
+    animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.portfolio-items:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
