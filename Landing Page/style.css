@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; 
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; 
+}
+header {
+    background: #0d84bb;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+    color: #ba157e;
+}
+section {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.about {
+    background: lightsteelblue;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
+}
+.portfolio {
+    background: lightgrey;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
+}
+.contact {
+    background: lightpink;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
+}
+.about:hover, .portfolio:hover, .contact:hover {
+    transform: translateY(0);
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333; 
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+}
+.profile-pic {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+.about,.portfolio,.contact {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    position: relative;
+}
